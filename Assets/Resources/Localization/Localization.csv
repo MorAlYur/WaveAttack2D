@@ -1,0 +1,322 @@
+﻿Key,Russian,English
+Menu.Game,Играть,Game
+Menu.Inventary,Инвентарь,Inventory
+Menu.Inventary.New,Новый,New
+Menu.Upgrade,Улучшения,Upgrades
+Menu.Shop,Магазин,Shop
+Menu.Settings,Настройки,Settings
+Menu.SelectLevel,Выбрать уровень,Select level
+Menu.Start,Старт,Start
+Menu.Back,Назад,Back
+Option.Language,Язык,Language
+Menu.Equipment.Equipment,Снаряжение:,Equipment:
+Menu.Equipment.UpgradingParts,Части для улучшений:,Upgrading parts:
+Menu.Equipment.Forge,Кузница,Forge
+Menu.ViborItem.Level,Уровень,Level
+Item.Quality.Normal,Качество: обычное,Quality: normal
+Item.Quality.Uncommon,Качество: необчное,Quality: uncommon
+Item.Quality.Unusual,Качество: редкое,Quality: unusual
+Item.Quality.Epic,Качество: эпическое,Quality: epic
+Item.Quality.Legendary,Качество: легендарное,Quality: legendary
+Item.Amulet1.Name,Древний амулет,Ancient amulet
+Item.Kolco1.Name,Золотое кольцо,Golden ring
+Item.Kurtka1.Name,Спортивная куртка,Sport jacket
+Item.Botinki1.Name,Кожаные ботинки,Leather boots
+Item.Golova1.Name,Ковбойская шляпа,Cowboy hat
+Item.Nogi1.Name,Синие штаны,Blue pants
+Item.Amulet2.Name,Альфа амулет,Alpha amulet
+Item.Kolco2.Name,Серебряное кольцо,Silver ring
+Item.Kurtka2.Name,Модная куртка,Fashion jacket
+Item.Botinki2.Name,Спортивные ботинки,Sports boots
+Item.Golova2.Name,Шлем викинга,Viking Helmet
+Item.Nogi2.Name,Поношенные штаны,Worn pants
+Item.Amulet3.Name,Звёздный амулет,Star amulet
+Item.Kolco3.Name,Кольцо с бриллиантом,Diamond ring
+Item.Kurtka3.Name,Зелёная куртка,Green jacket
+Item.Botinki3.Name,Рабочие ботинки,Work boots
+Item.Golova3.Name,Кепка,Sports hat
+Item.Nogi3.Name,Странные штаны,Strange pants
+Part.Nanomaterial,"Используется для
+ улучшения
+всех айтемов","Is used for
+  improvements
+  all items"
+Part.Amulet1,"Используется для
+ улучшения
+ древний амулет","Is used for
+  improvements
+  ancient amulet"
+Part.Kolco1,"Используется для
+      улучшения 
+золотое кольцо","Is used for
+       improvements
+Golden ring"
+Part.Kurtka1,"Используется для
+      улучшения 
+спортивная куртка","Is used for
+       improvements
+sport jacket"
+Part.Botinki1,"Используется для
+      улучшения 
+кожаные ботинки","Is used for
+       improvements
+leather boots"
+Part.Golova1,"Используется для
+      улучшения 
+ковбойской шляпы","Is used for
+       improvements
+cowboy hat"
+Part.Nogi1,"Используется для
+      улучшения 
+синие штаны","Is used for
+       improvements
+blue pants"
+Part.Amulet2,"Используется для
+ улучшения
+альфа амулет","Is used for
+  improvements
+alpha amulet"
+Part.Kolco2,"Используется для
+      улучшения 
+серебряное кольцо","Is used for
+       improvements
+silver ring"
+Part.Kurtka2,"Используется для
+      улучшения 
+модная куртка","Is used for
+       improvements
+fashion jacket"
+Part.Botinki2,"Используется для
+      улучшения 
+спортивные ботинки","Is used for
+       improvements
+sports boots"
+Part.Golova2,"Используется для
+      улучшения 
+шлем викинга","Is used for
+       improvements
+viking helmet"
+Part.Nogi2,"Используется для
+      улучшения 
+поношенные штаны","Is used for
+       improvements
+worn pants"
+Part.Amulet3,"Используется для
+ улучшения
+звёздный амулет","Is used for
+  improvements
+star amulet"
+Part.Kolco3,"Используется для
+      улучшения 
+кольцо с бриллиантом","Is used for
+       improvements
+diamond ring"
+Part.Kurtka3,"Используется для
+      улучшения 
+зелёная куртка","Is used for
+       improvements
+green jacket"
+Part.Botinki3,"Используется для
+      улучшения 
+рабочие ботинки","Is used for
+       improvements
+work boots"
+Part.Golova3,"Используется для
+      улучшения 
+кепка","Is used for
+       improvements
+sports hat"
+Part.Nogi3,"Используется для
+      улучшения 
+странные штаны","Is used for
+       improvements
+strange pants"
+ViborItem.Characteristics,Характеристики:,Characteristics:
+ViborItem.Characteristics.PerLevel,За уровень:,Per level:
+ViborItem.Characteristics.Damage,Урон,Damage
+ViborItem.Characteristics.Life,Жизни,Life
+ViborItem.Characteristics.Armor,Броня,Armor
+ViborItem.Characteristics.Dodge,Шанс увернуться,Chance to dodge
+ViborItem.Characteristics.CritChance,Шанс крита,Crit chance
+ViborItem.Characteristics.CritDamage,Урон от крита,Crit Damage
+ViborItem.Characteristics.AttackSpeed,Скорость атаки,Attack speed
+ViborItem.Characteristics.ShieldPower,Мощность щита,Shield power
+ViborItem.Disassemble,Разобрать,Disassemble
+ViborItem.Sell,Продать,Sell
+ViborItem.PutOn,Надеть,Equip
+ViborItem.TakeOff,Снять,Unequip
+ViborItem.Improve,Улучшить,Improve
+ViborItem.MaxLevel,Макc. уровень,Max level
+ViborItem.IsUsedFrom,Используется {0} из {1},Is used {0} from {1}
+Kuznica.Merge,Объеденить,Merge
+Kuznica.Reset,Сброс,Reset
+Menu.Inventory.Haracterictic.HP,Жизни,Life
+Menu.Inventory.Haracterictic.Damage,Урон,Damage
+Menu.Inventory.Haracterictic.Armor,Броня,Armor
+Menu.Inventory.Haracterictic.Shield,Прочность щита,Shield Durability
+Menu.Inventory.Haracterictic.AttackSpeed,Скорость атаки,Attack speed
+Menu.Inventory.Haracterictic.HealthRecovery,Востановление здоровья,Health recovery
+Menu.Inventory.Haracterictic.ChanceToDodge,Шанс увернуться,Chance to dodge
+Menu.Inventory.Haracterictic.CritChance,Шанс крита,Crit Chance
+Menu.Inventory.Haracterictic.CriticalDamage,Крит. урон,Critical Damage
+Menu.Inventory.Haracterictic.ExtraGold,Доп. Золото,Extra Gold
+Menu.Upgrades.Upgrades,Улучшения:,Upgrades:
+Menu.Upgrades.TimesOfImprovement,Раз улучшено:,Improvements:
+Menu.Upgrades.Damage,Урон,Damage
+Menu.Upgrades.Damage.TextFly,Урон +,Damage +
+Menu.Upgrades.Health,Здоровье,Health
+Menu.Upgrades.Health.TextFly,Здоровье +,Health +
+Menu.Upgrades.Defense,Броня,Armor
+Menu.Upgrades.Defense.TextFly,Броня +,Armor +
+Menu.Upgrades.Dodge,Уворот,Dodge
+Menu.Upgrades.Dodge.TextFly,"Шанс увернуться
+от атаки +","Chance to dodge
+from attack +"
+Menu.Upgrades.CritChance,Шанс крита,Crit Chance
+Menu.Upgrades.CritChance.TextFly,"Шанс нанести
+крутический 
+удар +","Chance to inflict
+steep
+blow +"
+Menu.Upgrades.CriticalDamage,Крит. Урон,Crit. Damage
+Menu.Upgrades.CriticalDamage.TextFly,"Критеский 
+урон +","Critical
+damage +"
+Menu.Upgrades.MachineGun,Пулемет,Machine gun
+Menu.Upgrades.MachineGun.TextFly,"Скорость 
+атаки +","Speed
+attacks +"
+Menu.Upgrades.Powerman,Энергетик,Powerman
+Menu.Upgrades.Powerman.TextFly,Мощность щита +,Shield Power +
+Menu.Upgrades.Medic,Медик,Medic
+Menu.Upgrades.Medic.TextFly,"Востановление
+здоровья при
+ получении 
+уровня +","Restoring
+health when
+getting
+a level +"
+Menu.Upgrades.RichMan,Богач,Rich Man
+Menu.Upgrades.RichMan.TextFly,"Дополнительные 
+монеты +","Additional
+coins +"
+Menu.PanelDisasseble.Question,Разобрать?,Disassemble?
+Menu.PanelDisasseble.Disassemble,Разобрать,Disassemble
+Menu.PanelDisasseble.YouWillReceive,Вы получите:,You will receive:
+Menu.PanelDisasseble2.YouWillReceive,Вы получили:,You received:
+Menu.PanelDisasseble2.ClickToClose,Нажмите чтобы закрыть,Click to close
+Menu.PanelSell.SellQestion,Продать?,Sell?
+Menu.PanelSell.Sell,Продать,Sell
+Menu.PanelUpgrade.PerUpgrade,За улучшение:,Per upgrade:
+Menu.PanelUpgradeKacestvo.MaxLevel,Макс.  Уровень,Max. Level
+Menu.PanelUpgradeUpgrade.Powerman,Мощность щита,Shield Power
+Menu.PanelUpgradeUpgrade.Medic,Исцеление при повышении уровня,Level up healing
+Menu.PanelUpgradeUpgrade.RichMan,Дополнительные монеты,Additional coins
+Game.Level,Уровень,Level
+Game.NewAbiliyiText,Выберите способность!,Choose an ability!
+Game.Skill.Damage.Name,Увелечение урона,Damage increase
+Game.Skill.Damage.Short,Силач,Strongman
+Game.Skill.Damage.Full,Увелечение урона,Damage increase
+Game.Skill.Heals.Name,Увелечние жизней,Life boost
+Game.Skill.Heals.Short,Жажда жизни,Thirst for life
+Game.Skill.Heals.Full,Увелечение максимального здоровья,Max Health Increase
+Game.Skill.Shield.Name,Улучшение щита,Shield upgrade
+Game.Skill.Shield.Short,Энергитик,Power Engineer
+Game.Skill.Shield.Full,Увелечение щита,Shield Increase
+Game.Skill.AttackSpeed.Name,Увелечение скорости атаки,Increase attack speed
+Game.Skill.AttackSpeed.Short,Пулемётчик,Machine gunner
+Game.Skill.AttackSpeed.Full,Увелечение скорости атаки,Increase attack speed
+Game.Skill.BulletFire1.Name,Огненные пули,Fire Bullets
+Game.Skill.BulletFire1.Short,Огненные пули,Fire Bullets
+Game.Skill.BulletFire1.Full,Ваши пули поджигают врагов,Your bullets set fire to enemies
+Game.Skill.BulletFire2.Name,Двойной огонь,Double fire
+Game.Skill.BulletFire2.Short,Двойной огонь,Double fire
+Game.Skill.BulletFire2.Full,Урон от огня увеличен,Fire damage increased
+Game.Skill.BulletFire3.Name,Тройной огонь,Triple fire
+Game.Skill.BulletFire3.Short,Тройной огонь,Triple fire
+Game.Skill.BulletFire3.Full,Урон от огня увеличен,Fire damage increased
+Game.Skill.BulletToxic1.Name,Ядовитые пули,Poison bullets
+Game.Skill.BulletToxic1.Short,Ядовитые пули,Poison bullets
+Game.Skill.BulletToxic1.Full,Ваши пули отравляют врагов,Your bullets poison the enemies
+Game.Skill.BulletToxic2.Name,Двойной яд,Double Poison
+Game.Skill.BulletToxic2.Short,Двойной яд,Double Poison
+Game.Skill.BulletToxic2.Full,Урон от яда увеличен,Poison damage increased
+Game.Skill.BulletToxic3.Name,Тройной яд,Triple Poison
+Game.Skill.BulletToxic3.Short,Тройной яд,Triple Poison
+Game.Skill.BulletToxic3.Full,Урон от яда увеличен,Poison damage increased
+Game.Skill.SkvoznieBullet.Name,Пронзающий выстрел,Piercing shot
+Game.Skill.SkvoznieBullet.Short,Пронзающий выстрел,Piercing shot
+Game.Skill.SkvoznieBullet.Full,Пули проходят сквозь врагов,Bullets pass through enemies
+Game.Skill.RikoshetBullet.Name,Рикошет,Ricochet
+Game.Skill.RikoshetBullet.Short,Рикошет,Ricochet
+Game.Skill.RikoshetBullet.Full,Пули отскакивают от стен,Bullets bounce off the walls
+Game.Skill.JumpBullet.Name,Скачущие пули,Jumping Bullets
+Game.Skill.JumpBullet.Short,Скачущие пули,Jumping Bullets
+Game.Skill.JumpBullet.Full,Пули скачут между врагами,Bullets jump between enemies
+Game.Skill.AddNewBullet.Name,Разделяющие пули,Separating bullets
+Game.Skill.AddNewBullet.Short,Разделяющие пули,Separating bullets
+Game.Skill.AddNewBullet.Full,При попадании во врага создается новая пуля,"When hitting an enemy, a new bullet is created"
+Game.Skill.MovientSpeedPlus.Name,Увелечение скорости бега,Increase running speed
+Game.Skill.MovientSpeedPlus.Short,Спринтер,Sprinter
+Game.Skill.MovientSpeedPlus.Full,Увелечение скорости бега,Increase running speed
+Game.Skill.Jump3.Name,Тройной прыжок,Triple jump
+Game.Skill.Jump3.Short,Прыгун,Jumper
+Game.Skill.Jump3.Full,Тройной прыжок,Triple jump
+Game.Skill.BulletDuble.Name,Двухстволка,Double - barreled shotgun
+Game.Skill.BulletDuble.Short,Двухстволка,Double - barreled shotgun
+Game.Skill.BulletDuble.Full,Две пули вместо одной,Two bullets instead of one
+Game.Skill.BulletTriple.Name,Трехстволка,Three - barrelled shotgun
+Game.Skill.BulletTriple.Short,Трехстволка,Three - barrelled shotgun
+Game.Skill.BulletTriple.Full,Три пули вместо двух,Three bullets instead of two
+Game.Skill.Bullet180.Name,Выстрел назад,Shot back
+Game.Skill.Bullet180.Short,Выстрел назад,Shot back
+Game.Skill.Bullet180.Full,Дополнительная пуля назад,Extra bullet back
+Game.Skill.Bullet90.Name,Вертикальный выстрел,Vertical shot
+Game.Skill.Bullet90.Short,Вертикальный выстрел,Vertical shot
+Game.Skill.Bullet90.Full,Две дополнительных вертикальных пули,Two additional vertical bullets
+Game.Skill.DopBullet.Name,Дополнительная пуля,Extra bullet
+Game.Skill.DopBullet.Short,Дробовик,Shotgun
+Game.Skill.DopBullet.Full,Вы стреляете двумя дополнительными пулями,You fire two extra bullets
+Game.Skill.Armor.Name,Увелечение брони,Increased armor
+Game.Skill.Armor.Short,Рыцарь,Knight
+Game.Skill.Armor.Full,Увелечение брони,Increased armor
+Game.Skill.CritChanse.Name,Увелечение шанса критического удара,Increased Critical Strike Chance
+Game.Skill.CritChanse.Short,Меткий выстрел,Accurate shot
+Game.Skill.CritChanse.Full,Увелечение шанса критического удара,Increased Critical Strike Chance
+Game.Skill.CritDamage.Name,Увелечение критического урона,Increased Critical Damage
+Game.Skill.CritDamage.Short,Критический урон,Critical Damage
+Game.Skill.CritDamage.Full,Увелечение критического урона,Increased Critical Damage
+Game.Skill.FirstAid.Name,Первая помощь,First aid
+Game.Skill.FirstAid.Short,Первая помощь,First aid
+Game.Skill.FirstAid.Full,Увелечение жизней восполняющихся при повышении уровня,Increased lives performed when leveling up
+Game.Skill.Volley.Name,Залп,Volley
+Game.Skill.Volley.Short,Залп,Volley
+Game.Skill.Volley.Full,Вы стреляете еще раз,You shoot again
+Game.Skill.Miss.Name,Уворот,Dodge
+Game.Skill.Miss.Short,Уворот,Dodge
+Game.Skill.Miss.Full,Увеличивает шанс увернуться,Increases the chance to dodge
+Game.Skill.Master.Name,Мастер на все руки,Handyman
+Game.Skill.Master.Short,Мастер на все руки,Handyman
+Game.Skill.Master.Full,"Слегка увеличивает щит, здоровье и атаку","Slightly increases shield, health and attack"
+Game.Skill.CritMaster.Name,Критический мастер,Critical Master
+Game.Skill.CritMaster.Short,Критический мастер,Critical Master
+Game.Skill.CritMaster.Full,Слегка увеличивает крит. шанс и крит. урон,Slightly increases crit. chance and crit. Damage
+Game.Skill.ExtraGold.Name,Золотая лихорадка,Gold Rush
+Game.Skill.ExtraGold.Short,Золотая лихорадка,Gold Rush
+Game.Skill.ExtraGold.Full,С врагов выпадает больше монет,Enemies drop more coins
+Game.Skill.Expa.Name,Вундеркинд,Child Prodigy
+Game.Skill.Expa.Short,Вундеркинд,Child Prodigy
+Game.Skill.Expa.Full,Вы получаете больше опыта,You get more experience
+Game.Skill.Diamond.Name,Кладоискатель,Treasure Hunter
+Game.Skill.Diamond.Short,Кладоискатель,Treasure Hunter
+Game.Skill.Diamond.Full,Иногда с врагов выподают брилианты,Sometimes enemies drop diamonds
+Game.Skill.Vampiric.Name,Вампиризм,Vampirism
+Game.Skill.Vampiric.Short,Вампиризм,Vampirism
+Game.Skill.Vampiric.Full,При убийстве врага вы исцеляетесь,"When you kill an enemy, you are healed"
+Game.Skill.BuletSpeed.Name,Быстрые пули,Fast Bullets
+Game.Skill.BuletSpeed.Short,Быстрые пули,Fast Bullets
+Game.Skill.BuletSpeed.Full,Ваши пули летят быстрее,Your bullets fly faster
+Game.Pause.Pause,Пауза,Pause
+Game.Pause.ActiveAbilities,Активные способности,Active abilities
+Game.Pause.Continue,Продолжить,Continue
+Game.Pause.GoMenu,В меню,Go menu

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1221782112384369807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -7964228005540998396, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: _wayPointX.Array.data[0]
+      value: 18.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7964228005540998396, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: _wayPointX.Array.data[1]
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370447, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424521676625370448, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_Name
+      value: Pig Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347047103669472965, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9998356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347047103669472965, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.018132962
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436633790247226539, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: HP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436633790247226539, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: maxHP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744007921322531631, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.33121055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744007921322531631, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.9435569
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1eb4ae076d56414fb6b1d3ae5e303f8, type: 3}

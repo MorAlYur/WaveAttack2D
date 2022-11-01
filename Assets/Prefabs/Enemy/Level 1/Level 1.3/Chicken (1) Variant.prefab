@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4750960652062448634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 900669984, guid: b9bfbd4aa94710d44b650a52244258ae, type: 3}
+      propertyPath: HP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 900669984, guid: b9bfbd4aa94710d44b650a52244258ae, type: 3}
+      propertyPath: maxHP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403079745411034666, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: _spawnEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403079745411034666, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: _isSpawnAllEnemySpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403079745411034666, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: _enemiesSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403079745411034666, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: _enemiesSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 4514858398741532792, guid: 3664ca7464e6b674a9642af8c6b127d6,
+        type: 3}
+    - target: {fileID: 1403079745411034666, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: _enemiesSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 3722107319885480810, guid: ab182d5b2e1eb7945b6a5a6d91b8679a,
+        type: 3}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.902077
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.9675312
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050436743360689115, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: m_Name
+      value: Chicken (1) Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9bfbd4aa94710d44b650a52244258ae, type: 3}

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6525549653628139927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6525549653628139924}
+  - component: {fileID: 6525549653628139925}
+  m_Layer: 0
+  m_Name: Saver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6525549653628139924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525549653628139927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6525549653628139925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525549653628139927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d838620a6ac97e04191db83b3b134c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _saveData:
+    _bank:
+      golld: 0
+      diamond: 0
+      goldInLevell: 0
+      diamondInLevel: 0
+      allGold: 0
+      allDiamond: 0
+    _inventarySaved: []
+    _newItemInInventary: 0
+    _partSaved: []
+    _upgradePersSave:
+      UpDamageLevelSave: 0
+      UpHealsLevelSave: 0
+      UpArmorLevelSave: 0
+      UpMissLevelSave: 0
+      UpCritChanceLevelSave: 0
+      UpCritDamageLevelSave: 0
+      UpAttackSpeedLevelSave: 0
+      UpShildLevelSave: 0
+      UpHealPerLevelLevelSave: 0
+      UpGoldBonusLevelSave: 0
+      allPointUpgrade: 0
+    _saveParametrAll:
+      _iDamage: 0
+      _iHeals: 0
+      _iArmor: 0
+      _iMiss: 0
+      _iCritChance: 0
+      _iCritDamage: 0
+      _iAttackSpeed: 0
+      _iMovementSpeed: 0
+      _upDamage: 0
+      _upHeals: 0
+      _upArmor: 0
+      _upMiss: 0
+      _upCritChance: 0
+      _upCritDamage: 0
+      _upAttackSpeed: 0
+      _upMovementSpeed: 0
+      _upHealPerLevel: 0
+      _upBonusGold: 0
+      _allDamage: 0
+      _allHeals: 0
+      _allArmor: 0
+      _allMiss: 0
+      _allCritChance: 0
+      _allCritDamage: 0
+      _allAttackSpeed: 0
+      _allShild: 0
+      _allHealPerLevel: 0
+      _allBonusGold: 0
+    _allTimeinGame: 0
+    _menuTimeinGame: 0
+    _gamplayTimeinGame: 0
