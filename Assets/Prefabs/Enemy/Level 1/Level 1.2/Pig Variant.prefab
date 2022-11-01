@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pig Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2323438201206587975, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
+        type: 3}
+      propertyPath: _timeToActivationMilisecond
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 3347047103669472965, guid: e1eb4ae076d56414fb6b1d3ae5e303f8,
         type: 3}
       propertyPath: m_LocalRotation.w
