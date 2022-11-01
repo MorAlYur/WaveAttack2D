@@ -15,6 +15,11 @@ PrefabInstance:
       propertyPath: maxHP
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 572103671955423128, guid: b9bfbd4aa94710d44b650a52244258ae,
+        type: 3}
+      propertyPath: _timeToActivationMilisecond
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 3050436743360689092, guid: b9bfbd4aa94710d44b650a52244258ae,
         type: 3}
       propertyPath: m_RootOrder
