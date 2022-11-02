@@ -97,5 +97,10 @@ PrefabInstance:
       propertyPath: maxHP
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 6170563904537073778, guid: f41bef0da964ed34d9cefc9b60883bed,
+        type: 3}
+      propertyPath: _timeToActivationMilisecond
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f41bef0da964ed34d9cefc9b60883bed, type: 3}
