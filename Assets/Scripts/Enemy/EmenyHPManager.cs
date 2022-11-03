@@ -80,9 +80,9 @@ public class EmenyHPManager : MonoBehaviour
     {
         HPBarEvent?.Invoke((float)HP / maxHP);
     }
-    public void TakeDamage(int countMinusDamageRicohetAndJumpBullet)
+    public void TakeDamage()
     {
-        int damage = _managerHPPlayer.damage - (int)(_managerHPPlayer.damage * countMinusDamageRicohetAndJumpBullet*0.1);
+        int damage = _managerHPPlayer.damage;
 
         if (_managerHPPlayer.isFire)                //если усиление горящие пули
         {
@@ -140,9 +140,11 @@ public class EmenyHPManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Pula>(out Pula pula))
-            TakeDamage(pula.countJumpBull+pula.countRikoshetBull);
-        
+        //if (collision.TryGetComponent<Pula>(out Pula pula))
+        //    TakeDamage(pula.countJumpBull+pula.countRikoshetBull);
+        if (collision.TryGetComponent<Bullet>(out Bullet bullet))
+            TakeDamage();
+
     }
     public void Delete()
     {

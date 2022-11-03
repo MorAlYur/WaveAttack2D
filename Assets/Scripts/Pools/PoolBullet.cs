@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoolBullet : MonoBehaviour
+public class PoolBullet : PlayerPoolsBullet
 {
     public int poolCount;
     public bool autoExpant;
     public Pula prefabPula;
+    public Transform container; 
 
     public PoolMono<Pula> pool;
 
@@ -41,13 +42,13 @@ public class PoolBullet : MonoBehaviour
 
 
 
-    private void Start()
+    public override void Initializade()
     {
-        pool = new PoolMono<Pula>(prefabPula, poolCount);
+        pool = new PoolMono<Pula>(prefabPula, poolCount, container);
         pool.autoExpand = autoExpant;
     }
 
-    public void ActiveBullet()
+    public override void ActivateBullet()
     {
 
         SetRotate();
@@ -77,28 +78,13 @@ public class PoolBullet : MonoBehaviour
                 break;
             case 3:
                 ShotAngle30();
-                ShotAngle45();
+                ShotAngle135();
                 ShotAngle60();
-                break;
-            case 4:
-                ShotAngle15();
-                ShotAngle30();
-                ShotAngle45();
-                ShotAngle60();
-                break;
-            case 5:
-                ShotAngle15();
-                ShotAngle30();
-                ShotAngle45();
-                ShotAngle60();
-                ShotAngle75();
                 break;
             default:
-                ShotAngle15();
                 ShotAngle30();
-                ShotAngle45();
+                ShotAngle135();
                 ShotAngle60();
-                ShotAngle75();
                 break;
         }
         if (managerHPPlayer.bullet90)
@@ -248,7 +234,7 @@ public class PoolBullet : MonoBehaviour
         bull2.SetCurrentTarget(currentTarget);
 
     }
-    public void ShotAngle75()
+    public void ShotAngle135()
     {
         var bull = pool.GetFreeElement(posSpaun1.position);
         bull.SetMoveDirection(targetSystem.IsRight);
@@ -259,7 +245,7 @@ public class PoolBullet : MonoBehaviour
         var bull2 = pool.GetFreeElement(posSpaun1.position);
         bull2.SetMoveDirection(targetSystem.IsRight);
         bull2.SetBonus(managerHPPlayer.skvozniePuli, managerHPPlayer.jumpPuli, managerHPPlayer.rikoshetPuli, managerHPPlayer.addNewPuli);
-        bull2.SetRotation(rotation + 75);
+        bull2.SetRotation(rotation + 135);
         bull2.SetCurrentTarget(currentTarget);
 
     }
@@ -296,10 +282,9 @@ public class PoolBullet : MonoBehaviour
         if (targetSystem.currentTarget != null)
         {
             currentTarget = targetSystem.currentTarget;
-            Vector3 direction = new Vector2(currentTarget.transform.position.x - transform.position.x, currentTarget.transform.position.y - transform.position.y);
+            Vector3 direction = new Vector2(currentTarget.transform.position.x - posSpaun1.position.x, currentTarget.transform.position.y - posSpaun1.position.y);
             rotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             this.transform.eulerAngles = new Vector3(0, 0, rotation);
-
         }
         else
         {
@@ -307,14 +292,12 @@ public class PoolBullet : MonoBehaviour
             if (targetSystem.IsRight)
             {
                 rotation = 0;
-                this.transform.eulerAngles = new Vector3(0, 0, rotation);
-
+                this.posSpaun1.eulerAngles = new Vector3(0, 0, rotation);
             }
             else
             {
                 rotation = 180;
-                this.transform.eulerAngles = new Vector3(0, 0, rotation);
-
+                this.posSpaun1.eulerAngles = new Vector3(0, 0, rotation);
             }
         }
     }
@@ -326,5 +309,5 @@ public class PoolBullet : MonoBehaviour
             bulet.speed *= kooficentDopSpeed;
         }
     }
-   
+
 }

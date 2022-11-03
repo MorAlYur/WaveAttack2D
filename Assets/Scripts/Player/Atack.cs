@@ -6,11 +6,10 @@ using Zenject;
 public class Atack : MonoBehaviour
 {
 
-    public GameObject prefabPula;
-    public Transform mestoSpawna;
-
     public TargetSystem targetSystem;
-    public PoolBullet poolBullet;
+
+
+   [SerializeField] private PlayerPoolsBullet _activPoolBulet; 
 
     public float attacTimeSpeed;
     [Inject]
@@ -18,12 +17,18 @@ public class Atack : MonoBehaviour
 
     private void Start()
     {
+        
+
         StartCoroutine(AttackCor());
         attacTimeSpeed =_itemSingolton._allAttackSpeed;
     }
-
+    public void SetPoolBullet(PlayerPoolsBullet playerPoolsBullet)
+    {
+        _activPoolBulet = playerPoolsBullet;
+    }
     IEnumerator AttackCor()
     {
+        yield return null;  
         while (true)
         {
             if (targetSystem.currentTarget == null)
@@ -37,6 +42,7 @@ public class Atack : MonoBehaviour
     }
     public void Attack()
     {
-        poolBullet.ActiveBullet();      
+        _activPoolBulet.ActivateBullet();     
+        
     }  
 }

@@ -47,6 +47,10 @@ public class PlayerMove : MonoBehaviour
     {
         _managerHPPlayer.TakeDamage1 -= JumpToTakeDamage;
     }
+    public void SetAnimator(Animator animatorr)
+    {
+        animator = animatorr;
+    }
     private void JumpToTakeDamage(int obj)
     {
         rb.Sleep();
