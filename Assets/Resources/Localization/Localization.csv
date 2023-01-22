@@ -1,5 +1,5 @@
 ﻿Key,Russian,English
-Menu.Game,Играть,Game
+Menu.Heroes,Герои,Heroes
 Menu.Inventary,Инвентарь,Inventory
 Menu.Inventary.New,Новый,New
 Menu.Upgrade,Улучшения,Upgrades
@@ -297,13 +297,16 @@ Game.Skill.Miss.Short,Уворот,Dodge
 Game.Skill.Miss.Full,Увеличивает шанс увернуться,Increases the chance to dodge
 Game.Skill.Master.Name,Мастер на все руки,Handyman
 Game.Skill.Master.Short,Мастер на все руки,Handyman
-Game.Skill.Master.Full,"Слегка увеличивает щит, здоровье и атаку","Slightly increases shield, health and attack"
+Game.Skill.Master.Full,"Слегка увеличивает здоровье, атаку и скорость атаки","Slightly increases health, attack and attack speed"
 Game.Skill.CritMaster.Name,Критический мастер,Critical Master
 Game.Skill.CritMaster.Short,Критический мастер,Critical Master
 Game.Skill.CritMaster.Full,Слегка увеличивает крит. шанс и крит. урон,Slightly increases crit. chance and crit. Damage
 Game.Skill.ExtraGold.Name,Золотая лихорадка,Gold Rush
 Game.Skill.ExtraGold.Short,Золотая лихорадка,Gold Rush
 Game.Skill.ExtraGold.Full,С врагов выпадает больше монет,Enemies drop more coins
+Game.Skill.ExtraPart.Name,Барахольщик,Junkman
+Game.Skill.ExtraPart.Short,Барахольщик,Junkman
+Game.Skill.ExtraPart.Full,Увеличен шанс выпадения частей айтемов,Increased drop rate of item parts
 Game.Skill.Expa.Name,Вундеркинд,Child Prodigy
 Game.Skill.Expa.Short,Вундеркинд,Child Prodigy
 Game.Skill.Expa.Full,Вы получаете больше опыта,You get more experience
@@ -313,9 +316,15 @@ Game.Skill.Diamond.Full,Иногда с врагов выподают брили
 Game.Skill.Vampiric.Name,Вампиризм,Vampirism
 Game.Skill.Vampiric.Short,Вампиризм,Vampirism
 Game.Skill.Vampiric.Full,При убийстве врага вы исцеляетесь,"When you kill an enemy, you are healed"
-Game.Skill.BuletSpeed.Name,Быстрые пули,Fast Bullets
-Game.Skill.BuletSpeed.Short,Быстрые пули,Fast Bullets
-Game.Skill.BuletSpeed.Full,Ваши пули летят быстрее,Your bullets fly faster
+Game.Skill.BangNormal.Name,Минёр,Miner
+Game.Skill.BangNormal.Short,Минёр,Miner
+Game.Skill.BangNormal.Full,При смерти враг взрывается,"At death, the enemy explodes"
+Game.Skill.BangFire.Name,Огненный минёр,Fire Miner
+Game.Skill.BangFire.Short,Огненный минёр,Fire Miner
+Game.Skill.BangFire.Full,При смерти враг взрывается огенной бурей,"At death, the enemy explodes in a firestorm"
+Game.Skill.BangToxic.Name,Токсичный минёр,Toxic miner
+Game.Skill.BangToxic.Short,Токсичный минёр,Toxic miner
+Game.Skill.BangToxic.Full,При смерти враг взрывается токсичной бурей,"At death, the enemy explodes with a toxic storm"
 Game.Pause.Pause,Пауза,Pause
 Game.Pause.ActiveAbilities,Активные способности,Active abilities
 Game.Pause.Continue,Продолжить,Continue

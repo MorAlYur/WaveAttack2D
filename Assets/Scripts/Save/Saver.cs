@@ -25,6 +25,16 @@ public class Saver : MonoBehaviour
     {
         _saveJSON.Save(_saveData);
     }
+    public void SaveDataActivHero(SaveLoadActivHero saveLoadActivHero)
+    {
+        _saveData._saveActivHero._activHero = saveLoadActivHero._activHero;
+    }
+    public SaveLoadActivHero LoadDataActivHero()
+    {
+        SaveLoadActivHero save = new SaveLoadActivHero();
+        save._activHero = _saveData._saveActivHero._activHero;
+        return save;
+    }
     #region // банк
     public void SaveDataBank(SaveLoadBank bank)
     {

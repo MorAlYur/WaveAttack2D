@@ -48,12 +48,9 @@ public class HelpTextLevelUPMenu : MonoBehaviour
     }
     private void SetTextHelp()
     {
-        _tHelp1.text = LocalizationManager.Localize(_levelUpMenu.bonusAvailable[_levelUpMenu.vibraniBonus[0]].
-                                                      GetComponent<SkilSpecification>()._fullSpecification);
-        _tHelp2.text = LocalizationManager.Localize(_levelUpMenu.bonusAvailable[_levelUpMenu.vibraniBonus[1]].
-                                                      GetComponent<SkilSpecification>()._fullSpecification);
-        _tHelp3.text = LocalizationManager.Localize(_levelUpMenu.bonusAvailable[_levelUpMenu.vibraniBonus[2]].
-                                                      GetComponent<SkilSpecification>()._fullSpecification);
+        _tHelp1.text = LocalizationManager.Localize(_levelUpMenu.skils[0].FullSpecification);                                          
+        _tHelp2.text = LocalizationManager.Localize(_levelUpMenu.skils[1].FullSpecification);
+        _tHelp3.text = LocalizationManager.Localize(_levelUpMenu.skils[2].FullSpecification);
     }
 
 }

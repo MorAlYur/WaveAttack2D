@@ -13,14 +13,14 @@ public class SkillToPauza : MonoBehaviour
     [SerializeField] private float _timeFlyText;
     private Coroutine rut;
 
-    public void SetImage(Image image)
+    public void SetImage(Sprite sprite)
     {
-        _iSkil.sprite = image.sprite;
+        _iSkil.sprite = sprite;
     }
     public void SetOpisanie(string shortSpecification, string fullSpecification)
     {
-        _shortSpecification.text = shortSpecification;
-        _fullSpecification.text = fullSpecification;
+        _shortSpecification.text =LocalizationManager.Localize(shortSpecification);
+        _fullSpecification.text =LocalizationManager.Localize(fullSpecification);
     }
     public void SetActiveTextFly()
     {

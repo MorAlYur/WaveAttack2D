@@ -46,6 +46,15 @@ public class Factory : MonoBehaviour
     [SerializeField] private FactoryLevel1_1 _factoryLevel1_1;
     [SerializeField] private FactoryLevel1_2 _factoryLevel1_2;
     [SerializeField] private FactoryLevel1_3 _factoryLevel1_3;
+    [SerializeField] private FactoryLevel1_4 _factoryLevel1_4;
+    [SerializeField] private FactoryLevel1_5 _factoryLevel1_5;
+    [SerializeField] private FactoryLevel1_6 _factoryLevel1_6;
+    [SerializeField] private FactoryLevel1_7 _factoryLevel1_7;
+    [SerializeField] private FactoryLevel1_8 _factoryLevel1_8;
+    [SerializeField] private FactoryLevel1_9 _factoryLevel1_9;
+    [SerializeField] private FactoryLevel1_10 _factoryLevel1_10;
+
+    public event Action<Vector3> KillEnemy;
 
     private void Start()
     {
@@ -73,6 +82,28 @@ public class Factory : MonoBehaviour
             case Levels.Level1_3:
                 _factoryLevel1_3.InstanseAllScene();
                 break;
+            case Levels.Level1_4:
+                _factoryLevel1_4.InstanseAllScene();
+                break;
+            case Levels.Level1_5:
+                _factoryLevel1_5.InstanseAllScene();
+                break;
+            case Levels.Level1_6:
+                _factoryLevel1_6.InstanseAllScene();
+                break;
+            case Levels.Level1_7:
+                _factoryLevel1_7.InstanseAllScene();
+                break;
+            case Levels.Level1_8:
+                _factoryLevel1_8.InstanseAllScene();
+                break;
+            case Levels.Level1_9:
+                _factoryLevel1_9.InstanseAllScene();
+                break;
+            case Levels.Level1_10:
+                _factoryLevel1_10.InstanseAllScene();
+                break;
+
             default:
                 _factoryLevel1_1.InstanseAllScene();
                 break;
@@ -111,8 +142,12 @@ public class Factory : MonoBehaviour
         Destroy(level.gameObject);
     }
 
-    private void DeadEnemy(bool isKill,Enemy enemy)
+    private void DeadEnemy(bool isKill, Vector3 position, Enemy enemy)
     {
+        if (isKill) 
+        {
+            KillEnemy?.Invoke(position);
+        }
         Disable(enemy);
         _activEnemies.Remove(enemy);
 

@@ -16,8 +16,8 @@ public class SkilSpecification : MonoBehaviour
     public void SetTextExp()
     {
         _levelTextExplain.ActivateBonText(LocalizationManager.Localize(_shortSpecification), LocalizationManager.Localize(_fullSpecification));
-        _menuPauza.Activate(gameObject.GetComponent<Image>(), LocalizationManager.Localize(_shortSpecification),
-                                                              LocalizationManager.Localize(_fullSpecification));
+       // _menuPauza.Activate(gameObject.GetComponent<Image>(), LocalizationManager.Localize(_shortSpecification),
+                                                          //    LocalizationManager.Localize(_fullSpecification));
     }
      
 }

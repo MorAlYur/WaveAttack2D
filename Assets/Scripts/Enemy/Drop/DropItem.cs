@@ -25,7 +25,7 @@ public class DropItem : MonoBehaviour
 
     private void Start()
     {
-        _tPlayer = GameObject.FindObjectOfType<ManagerHPPlayer>().transform;
+        _tPlayer = FindObjectOfType<ManagerHPPlayer>().transform;
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         _rigidbody2D.AddForce(new Vector2(Random.Range(-0.5f,0.5f),1f)* force, ForceMode2D.Impulse);
         Invoke("Fly", timeZad);

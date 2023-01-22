@@ -93,11 +93,11 @@ public class Pula : MonoBehaviour
 
         transform.Translate(direction * speed);
 
-        var dis = Vector3.Distance(startPos, transform.position);
-        if (Mathf.Abs(dis) > 25)
-        {
-            SetActiveFalse();
-        }
+        //var dis = Vector3.Distance(startPos, transform.position);
+        //if (Mathf.Abs(dis) > 25)
+        //{
+        //    SetActiveFalse();
+        //}
     }
 
     #region для скачущих пуль

@@ -36,9 +36,17 @@ public class ManagerHPPlayer : MonoBehaviour
     public float miss;
     public float critChanse;
     public float critDamage;
+    public float attackSpped;
+
+    public float maxMiss;
+    public float maxCritChanse;
+    public float maxAttackSpeed;
+    public int maxDopCountBullet;
 
     public int damageFire;
     public int damageToxic;
+    public float _coofFireDamage;
+    public float _coofToxicDamage;
     [Header("Шанс дропа")]
     public float _dopExpPR;
     public float _dopGoldPR;
@@ -62,6 +70,9 @@ public class ManagerHPPlayer : MonoBehaviour
     public bool dubleShot;            // доп. выстрел
     public bool isVampiric;           // исцеление при смерти врага
     public int vampiricHelsing;    // количество востанавливающихся жизней
+    public bool bangNormal;
+    public bool bangFire;
+    public bool bangToxic;
 
 
 
@@ -88,6 +99,7 @@ public class ManagerHPPlayer : MonoBehaviour
         SetDamageFireAndToxic();
         SetMaxHP(maxHP,HP,true);
         SetMaxShild(maxShild,shild,true);
+        SetDamageFireAndToxic();
     }
     private void SetStartParamertPers()
     {
@@ -99,6 +111,7 @@ public class ManagerHPPlayer : MonoBehaviour
         miss = _itemSingolton._allMiss;
         critChanse = _itemSingolton._allCritChance;
         critDamage = _itemSingolton._allCritDamage;
+        attackSpped = _itemSingolton._allAttackSpeed;
         HP = maxHP;
         shild = maxShild;
 
@@ -106,8 +119,8 @@ public class ManagerHPPlayer : MonoBehaviour
     }
     public void SetDamageFireAndToxic()
     {
-        damageFire = (int)(damage * 0.75);
-        damageToxic = (int)(damage * 0.75);
+        damageFire = (int)(damage * _coofFireDamage);
+        damageToxic = (int)(damage * _coofToxicDamage);
     }
     public void SetMaxHP(int maxxHP,int HP,bool isSetHP)
     {
@@ -182,7 +195,7 @@ public class ManagerHPPlayer : MonoBehaviour
     }
     public int ArmorPenetration(int damage)
     {
-        float proctntPonizenija = (100 * (armor * 0.06f) / (1 + armor * 0.06f))*0.01f;
+        float proctntPonizenija = (100 * (armor * 0.01f) / (2 + armor * 0.01f))*0.01f;
         int d = (int)(damage - (damage * proctntPonizenija));
         return d;
     }
@@ -226,4 +239,94 @@ public class ManagerHPPlayer : MonoBehaviour
             TakeDamag(emenyHPManager.damageMele);
     }
 
+    #region // изменение параметров
+    public void ChangeAttackSpeed(float coof)
+    {
+        attackSpped = attackSpped * coof;
+    }
+    public void ChangeDamage(float coof)
+    {
+        damage = (int)(damage * coof);
+        SetDamageFireAndToxic();
+    }
+    public void ChangeDamage(int bonusDamage)
+    {
+        damage += bonusDamage;
+    }
+
+    public void ChangeArmor(float coof)
+    {
+        armor = (int)(armor * coof);
+    }
+    public void ChangeArmor(int bonusArmor)
+    {
+        armor += bonusArmor;
+    }
+    public void ChangeCritChanse(float bonusCritChanse)   
+    {
+        critChanse += bonusCritChanse;
+        if(critChanse>maxCritChanse)
+            critChanse = maxCritChanse;
+    }
+    public void ChangeCritDamage(int bonusCritDamage)   
+    {
+        critDamage += bonusCritDamage;
+    }
+    public void ChangeMiss(float bonusMiss)
+    {
+        miss += bonusMiss;
+        if(miss>maxMiss)
+            miss = maxMiss;
+    }
+    public void ChangeFireCoof(float bonusCoofFire)
+    {
+        _coofFireDamage *= bonusCoofFire;
+        SetDamageFireAndToxic();
+    }
+    public void ChangeToxicCoof(float bonusCoofToxic)
+    {
+        _coofToxicDamage *= bonusCoofToxic;
+        SetDamageFireAndToxic();
+    }
+    public void ChangeForwardCountBullet(int newCountBullet)
+    {
+        countBullet = newCountBullet;
+        if(countBullet>3)
+            countBullet = 3;
+    }
+
+    public void ChangeDopCountBullet()
+    {
+        dopCountBullet++;
+        if (dopCountBullet > maxDopCountBullet)
+        {
+            dopCountBullet = maxDopCountBullet;
+        }
+    }
+    public void ChangeHealsPerLevel(int bonusHealsPerLevel)
+    {
+        healsPerLevel+=bonusHealsPerLevel;
+        SetHP(healsPerLevel, false);
+    }
+
+    public void ChangeDopGold(float dopCoofDropGold)
+    {
+        _dopGoldPR+=dopCoofDropGold;
+    }
+     public void ChangeDopDiamod(float dopCoofDropDiamond)
+    {
+        _dopDropDiamondPR+= dopCoofDropDiamond;
+    }
+    public void ChangeDopExpa(float dopCoofDropExpa)
+    {
+        _dopExpPR += dopCoofDropExpa;
+    }
+     public void ChangeDopPart(float dopCoofDropPart)
+    {
+        _dopPrDropPart += dopCoofDropPart;
+    }
+
+
+
+    #endregion
 }

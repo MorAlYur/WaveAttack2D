@@ -12,40 +12,54 @@ public class MenuPauza : MonoBehaviour
     [SerializeField] private GameObject _exitConfirmGO;
     [SerializeField] private RewardInLevel _rewardInLevel;
 
+    [SerializeField] private GridLayoutGroup _gridLayoutGroup; 
+
+    private int _countActivSkill;
+
     public void StartPauza()
     {
         _menuPauzaCanvas.alpha = 1;
         _menuPauzaCanvas.blocksRaycasts = true;
         Time.timeScale = 0;
     }
+
     public void StopPauza()
     {
         _menuPauzaCanvas.alpha = 0;
         _menuPauzaCanvas.blocksRaycasts = false;
         Time.timeScale = 1;
     }
+
     public void GoTOMenu()
     {
         _exitConfirmGO.SetActive(true);
     }
+
     public void ExitConfirmYes()
     {
         _rewardInLevel.GoTOMenu();
     }
+
     public void ExitConfirmNo()
     {
         _exitConfirmGO.SetActive(false);
     }
-        
 
-
-    public void Activate(Image imagee,string shortSpecification, string fullSpecification)
+    public void SetSkillInMenuPauza(Sprite imageSkill ,string shortSpecification,string fullSpeification)
     {
-        var obj = Instantiate(_prefabActivSkill,_goPaternSkils);
-        obj.SetImage(imagee);
-        obj.SetOpisanie(shortSpecification, fullSpecification);
+        var go = Instantiate(_prefabActivSkill, _goPaternSkils);
+        go.SetImage(imageSkill);
+        go.SetOpisanie(shortSpecification, fullSpeification);
+        _countActivSkill++;
+        if (_countActivSkill > 18)
+        {
+            SetSizeGridLayoutGroup();
+        }
     }
-    
+    private void SetSizeGridLayoutGroup()
+    {
+        _gridLayoutGroup.cellSize = new Vector2(150, 150);
+    }
 
-    
+
 }

@@ -95,7 +95,8 @@ public class EnemyDrop : MonoBehaviour
                 
             }
             var item = Instantiate(_prefabItemDrop, transform.position, Quaternion.identity);
-            item.GetComponent<DropItem>().SetParametr(_itemSingolton.allitems[it].itemName, _itemSingolton.allitems[it].GetComponent<Image>().sprite);
+            item.GetComponent<DropItem>().SetParametr(LocalizationManager.Localize(_itemSingolton.allitems[it].itemName),
+                _itemSingolton.allitems[it].GetComponent<Image>().sprite);
             _rewardInLevel.AddItemList(_itemSingolton.allitems[it].gameObject);
             _saver.AddItemToInventarySaveData(_itemSingolton.allitems[it]);
             return;
@@ -104,7 +105,8 @@ public class EnemyDrop : MonoBehaviour
         {
             var it = Random.Range(0, _itemSingolton._itemsLegendary.Count);
             var item =  Instantiate(_prefabItemDrop,transform.position,Quaternion.identity);
-            item.GetComponent<DropItem>().SetParametr(_itemSingolton._itemsLegendary[it].itemName, _itemSingolton._itemsLegendary[it].GetComponent<Image>().sprite);
+            item.GetComponent<DropItem>().SetParametr(LocalizationManager.Localize(_itemSingolton._itemsLegendary[it].itemName),
+                _itemSingolton._itemsLegendary[it].GetComponent<Image>().sprite);
             _rewardInLevel.AddItemList(_itemSingolton._itemsLegendary[it].gameObject);
             _saver.AddItemToInventarySaveData(_itemSingolton._itemsLegendary[it]);
             return;
@@ -113,7 +115,8 @@ public class EnemyDrop : MonoBehaviour
         {
             var it = Random.Range(0, _itemSingolton._itemsEpic.Count);
             var item = Instantiate(_prefabItemDrop, transform.position, Quaternion.identity);
-            item.GetComponent<DropItem>().SetParametr(_itemSingolton._itemsEpic[it].itemName, _itemSingolton._itemsEpic[it].GetComponent<Image>().sprite);
+            item.GetComponent<DropItem>().SetParametr(LocalizationManager.Localize(_itemSingolton._itemsEpic[it].itemName),
+                _itemSingolton._itemsEpic[it].GetComponent<Image>().sprite);
             _rewardInLevel.AddItemList(_itemSingolton._itemsEpic[it].gameObject);
             _saver.AddItemToInventarySaveData(_itemSingolton._itemsEpic[it]);
             return;
@@ -122,7 +125,8 @@ public class EnemyDrop : MonoBehaviour
         {
             var it = Random.Range(0, _itemSingolton._itemsUnusual.Count);
             var item = Instantiate(_prefabItemDrop, transform.position, Quaternion.identity);
-            item.GetComponent<DropItem>().SetParametr(_itemSingolton._itemsUnusual[it].itemName, _itemSingolton._itemsUnusual[it].GetComponent<Image>().sprite);
+            item.GetComponent<DropItem>().SetParametr(LocalizationManager.Localize(_itemSingolton._itemsUnusual[it].itemName),
+                _itemSingolton._itemsUnusual[it].GetComponent<Image>().sprite);
             _rewardInLevel.AddItemList(_itemSingolton._itemsUnusual[it].gameObject);
             _saver.AddItemToInventarySaveData(_itemSingolton._itemsUnusual[it]);
             return;
@@ -131,7 +135,8 @@ public class EnemyDrop : MonoBehaviour
         {
             var it = Random.Range(0, _itemSingolton._itemsUncommom.Count);
             var item = Instantiate(_prefabItemDrop, transform.position, Quaternion.identity);
-            item.GetComponent<DropItem>().SetParametr(_itemSingolton._itemsUncommom[it].itemName, _itemSingolton._itemsUncommom[it].GetComponent<Image>().sprite);
+            item.GetComponent<DropItem>().SetParametr(LocalizationManager.Localize(_itemSingolton._itemsUncommom[it].itemName),
+                _itemSingolton._itemsUncommom[it].GetComponent<Image>().sprite);
             _rewardInLevel.AddItemList(_itemSingolton._itemsUncommom[it].gameObject);
             _saver.AddItemToInventarySaveData(_itemSingolton._itemsUncommom[it]);
             return;
@@ -140,7 +145,8 @@ public class EnemyDrop : MonoBehaviour
         {
             var it = Random.Range(0, _itemSingolton._itemsNormal.Count);
             var item = Instantiate(_prefabItemDrop, transform.position, Quaternion.identity);
-            item.GetComponent<DropItem>().SetParametr(_itemSingolton._itemsNormal[it].itemName, _itemSingolton._itemsNormal[it].GetComponent<Image>().sprite);
+            item.GetComponent<DropItem>().SetParametr(LocalizationManager.Localize(_itemSingolton._itemsNormal[it].itemName), 
+                _itemSingolton._itemsNormal[it].GetComponent<Image>().sprite);
             _rewardInLevel.AddItemList(_itemSingolton._itemsNormal[it].gameObject);
             _saver.AddItemToInventarySaveData(_itemSingolton._itemsNormal[it]);
             return;
@@ -169,7 +175,8 @@ public class EnemyDrop : MonoBehaviour
                 {
                      r = Random.Range(0, _itemSingolton.allItemsPart.Count);
                 }
-                part.GetComponent<DropItem>().SetParametr(_itemSingolton.allItemsPart[r]._infoPart, _itemSingolton.allItemsPart[r].GetComponent<Image>().sprite);
+                part.GetComponent<DropItem>().SetParametr(_itemSingolton.allItemsPart[r]._infoPart,
+                    _itemSingolton.allItemsPart[r].GetComponent<Image>().sprite);
                 _rewardInLevel.AddPartList(_itemSingolton.allItemsPart[r].gameObject);
                 _saver.AddToPartSaveData(_itemSingolton.allItemsPart[r].ID, 1);
             }

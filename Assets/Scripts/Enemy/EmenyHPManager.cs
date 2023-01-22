@@ -18,7 +18,7 @@ public class EmenyHPManager : MonoBehaviour
 
     public event Action<float> HPBarEvent;
 
-    public delegate void DeadEnemyDelegate(bool isKill,Enemy enemy);
+    public delegate void DeadEnemyDelegate(bool isKill,Vector3 position,Enemy enemy);
     public event DeadEnemyDelegate DeadEnemyEvent;
 
     public static event Action<EmenyHPManager> AddEnemyEvent;
@@ -82,9 +82,11 @@ public class EmenyHPManager : MonoBehaviour
     }
     public void TakeDamage()
     {
-        int damage = _managerHPPlayer.damage;
-
-        if (_managerHPPlayer.isFire)                //если усиление горящие пули
+        TakeDamage(_managerHPPlayer.damage, _managerHPPlayer.isFire, _managerHPPlayer.isToxic, true);
+    }
+    public void TakeDamage(int damage,bool isFire,bool isToxic,bool possibleIsCrit)
+    {
+        if (isFire)                //если усиление горящие пули
         {
             startFire = 0;
             if (!isFireEmeny)
@@ -92,7 +94,7 @@ public class EmenyHPManager : MonoBehaviour
                 StartCoroutine(FireDamage());
             }
         }
-        if (_managerHPPlayer.isToxic)                //если усиление ядовитые пули
+        if (isToxic)                //если усиление ядовитые пули
         {
             startToxic = 0;
             if (!isToxicEmeny)
@@ -100,15 +102,18 @@ public class EmenyHPManager : MonoBehaviour
                 StartCoroutine(ToxicDamage());
             }
         }
-        int r = UnityEngine.Random.Range(0, 10000);
-        if (r <= ((int)(_managerHPPlayer.critChanse * 100)))
+        if (possibleIsCrit)
         {
-           damage = damage +(int)(damage *( _managerHPPlayer.critDamage*0.01f)+1);
-            isCrit = true;
-        }
-        else
-        {
-            isCrit = false;
+            int r = UnityEngine.Random.Range(0, 10000);
+            if (r <= ((int)(_managerHPPlayer.critChanse * 100)))
+            {
+                damage = damage + (int)(damage * (_managerHPPlayer.critDamage * 0.01f) + 1);
+                isCrit = true;
+            }
+            else
+            {
+                isCrit = false;
+            }
         }
 
         SetHP(damage, false, false, isCrit, true);
@@ -152,7 +157,7 @@ public class EmenyHPManager : MonoBehaviour
         {
             _enemyDrop.Deat();
             GetComponent<EnemyCreateEnemy>().CreateEnemyDead();
-            DeadEnemyEvent?.Invoke(true, gameObject.GetComponent<Enemy>());
+            DeadEnemyEvent?.Invoke(true,transform.position, gameObject.GetComponent<Enemy>());
             
             isDeat = true;
         }
@@ -162,6 +167,6 @@ public class EmenyHPManager : MonoBehaviour
 
     private void OnDisable()
     {
-        DeadEnemyEvent?.Invoke(false,gameObject.GetComponent<Enemy>());
+        DeadEnemyEvent?.Invoke(false, transform.position, gameObject.GetComponent<Enemy>());
     }
 }

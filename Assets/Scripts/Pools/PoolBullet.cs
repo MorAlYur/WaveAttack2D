@@ -284,7 +284,7 @@ public class PoolBullet : PlayerPoolsBullet
             currentTarget = targetSystem.currentTarget;
             Vector3 direction = new Vector2(currentTarget.transform.position.x - posSpaun1.position.x, currentTarget.transform.position.y - posSpaun1.position.y);
             rotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            this.transform.eulerAngles = new Vector3(0, 0, rotation);
+            //this.transform.eulerAngles = new Vector3(0, 0, rotation);
         }
         else
         {
@@ -292,12 +292,12 @@ public class PoolBullet : PlayerPoolsBullet
             if (targetSystem.IsRight)
             {
                 rotation = 0;
-                this.posSpaun1.eulerAngles = new Vector3(0, 0, rotation);
+                //this.posSpaun1.eulerAngles = new Vector3(0, 0, rotation);
             }
             else
             {
                 rotation = 180;
-                this.posSpaun1.eulerAngles = new Vector3(0, 0, rotation);
+               // this.posSpaun1.eulerAngles = new Vector3(0, 0, rotation);
             }
         }
     }

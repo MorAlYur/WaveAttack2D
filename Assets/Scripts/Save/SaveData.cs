@@ -17,6 +17,8 @@ public class SaveData
 
     public SaveParametrAll _saveParametrAll = new SaveParametrAll();
 
+    public SaveActivHero _saveActivHero = new SaveActivHero();
+
     public long _allTimeinGame;
     public long _menuTimeinGame;
     public long _gamplayTimeinGame;
@@ -109,5 +111,10 @@ public class SaveParametrAll
     public float _allShild;
     public float _allHealPerLevel;
     public float _allBonusGold;
+}
+[Serializable]
+public class SaveActivHero
+{
+    public HeroesTitle _activHero;
 }
 

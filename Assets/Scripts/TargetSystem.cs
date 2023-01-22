@@ -41,6 +41,11 @@ public class TargetSystem : MonoBehaviour
 		line = GetComponent<LineRenderer>();
 		colls = _enemyManager._displayEnemy;
 	}
+
+	public void SetPositionStartPointLazer(Transform transform)
+	{
+        bullSpavnerTratsform = transform;
+    }
  //   void RandomTarget()
 	//{
 	//	GameObject[] tmp = new GameObject[0];

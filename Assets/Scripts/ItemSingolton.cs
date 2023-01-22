@@ -8,6 +8,7 @@ using Zenject;
 
 public class ItemSingolton : MonoBehaviour
 {
+    public HeroesTitle _activHero;
 
     public List<Item> allitems;
     public List<PartInfo> allItemsPart;
@@ -20,6 +21,7 @@ public class ItemSingolton : MonoBehaviour
     [Inject]
     public Saver _saver;
     public SaveLoadParametrLocal _saveLocal;
+    public SaveLoadActivHero _saveLocalActivHero;
 
     [Header("Параметры начальные")]
     public float _defDamage;
@@ -75,6 +77,7 @@ public class ItemSingolton : MonoBehaviour
     public void Start()
     {
         _saveLocal = new SaveLoadParametrLocal();
+        _saveLocalActivHero = new SaveLoadActivHero();
         LoadGame();
         SortItemIsKacestvo();
     }
@@ -181,6 +184,8 @@ public class ItemSingolton : MonoBehaviour
         _saveLocal._allBonusGold = _allBonusGold;
 
         _saver.SaveParametrAll(_saveLocal);
+        _saveLocalActivHero._activHero = _activHero;
+        _saver.SaveDataActivHero(_saveLocalActivHero);
     }
 
     public void LoadGame()
@@ -217,6 +222,9 @@ public class ItemSingolton : MonoBehaviour
         _allShild = _saveLocal._allShild;
         _allHealPerLevel = _saveLocal._allHealPerLevel;
         _allBonusGold = _saveLocal._allBonusGold;
+
+        _saveLocalActivHero = _saver.LoadDataActivHero();
+        _activHero = _saveLocalActivHero._activHero;
     }
 
     private void OnApplicationQuit()
@@ -267,4 +275,9 @@ public class SaveLoadParametrLocal
     public float _allShild;
     public float _allHealPerLevel;
     public float _allBonusGold;
+}
+
+public class SaveLoadActivHero
+{
+    public HeroesTitle _activHero;
 }
