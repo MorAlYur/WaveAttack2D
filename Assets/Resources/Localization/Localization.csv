@@ -145,7 +145,7 @@ ViborItem.Disassemble,Разобрать,Disassemble
 ViborItem.Sell,Продать,Sell
 ViborItem.PutOn,Надеть,Equip
 ViborItem.TakeOff,Снять,Unequip
-ViborItem.Improve,Улучшить,Improve
+ViborItem.Improve,Улучшить,Upgrade
 ViborItem.MaxLevel,Макc. уровень,Max level
 ViborItem.IsUsedFrom,Используется {0} из {1},Is used {0} from {1}
 Kuznica.Merge,Объеденить,Merge
@@ -212,7 +212,19 @@ Menu.PanelUpgradeKacestvo.MaxLevel,Макс.  Уровень,Max. Level
 Menu.PanelUpgradeUpgrade.Powerman,Мощность щита,Shield Power
 Menu.PanelUpgradeUpgrade.Medic,Исцеление при повышении уровня,Level up healing
 Menu.PanelUpgradeUpgrade.RichMan,Дополнительные монеты,Additional coins
-Game.Level,Уровень,Level
+Menu.Heroes.AttackType.ChangeРero,Сменить героя,Change hero
+Menu.Heroes.AttackType.Type,Тип:,Type:
+Menu.Heroes.AttackType.Shooter,Стрелок,Shooter
+Menu.Heroes.AttackType.Lazer,Лазер,Lazer
+Menu.Heroes.HeroName1,Урборос,Urboros
+Menu.Heroes.HeroName2,ЛазерГан,LazerGun
+Menu.Heroes.LevelActivHero,Ур. {0},Lvl.  {0}
+Menu.Heroes.PanelRight.Levels,Уровни,Levels
+Menu.Heroes.PanelRight.Mastery,Мастерство,Mastery
+Menu.Heroes.PanelRight.Stars,Звёзды,Stars
+Menu.Heroes.PanelRight.LvlMastery,Ур. мастерства:,Lvl. Mastery:
+Menu.Heroes.PanelRight.Reset,Сброс,Reset
+Menu.Heroes.RewardInLevel,За уровень,Per level
 Game.NewAbiliyiText,Выберите способность!,Choose an ability!
 Game.Skill.Damage.Name,Увелечение урона,Damage increase
 Game.Skill.Damage.Short,Силач,Strongman

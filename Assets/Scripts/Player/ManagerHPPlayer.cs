@@ -79,6 +79,9 @@ public class ManagerHPPlayer : MonoBehaviour
     private int _layerPlayer = 8;
     private int[] _layerEnemy = new int[] {13,14,15,16};
 
+    [SerializeField] private ShildUI _shildUI; 
+
+   
     [Inject]
     private ItemSingolton _itemSingolton;
 
@@ -90,6 +93,7 @@ public class ManagerHPPlayer : MonoBehaviour
     private void NewLevel()
     {
         SetHP(healsPerLevel, false);
+        SetShild(((int)maxShild/2), false);
     }
 
     private void Start()
@@ -169,10 +173,12 @@ public class ManagerHPPlayer : MonoBehaviour
                 shild = 0;
                 ChangeShildEvent?.Invoke(can, shild, true);
                 int izbChangeShild = changeShild - can;
+                _shildUI.AplayDamage(true);
                 SetHP(ArmorPenetration(izbChangeShild), true);
             }
             else
             {
+                _shildUI.AplayDamage(false);
                 shild -= changeShild;
                 ChangeShildEvent?.Invoke(changeShild,shild, true);
             }
@@ -182,11 +188,13 @@ public class ManagerHPPlayer : MonoBehaviour
             if (shild + changeShild <= maxShild)
             {
                 shild += changeShild;
+                _shildUI.ActivateShild();
                 ChangeShildEvent?.Invoke(changeShild, shild, false);
             }
             else
             {
                 shild = maxShild;
+                _shildUI.ActivateShild();
                 ChangeShildEvent?.Invoke(changeShild, shild, false);
                 
             }
