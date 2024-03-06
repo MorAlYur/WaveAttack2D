@@ -6,8 +6,6 @@ using Zenject;
 
 public class UIAllParamert : MonoBehaviour
 {
-
-    public Inventary _inventary;
     [Inject]
     public ItemSingolton _itemSingolton;
     public Text _bHP;
@@ -21,8 +19,18 @@ public class UIAllParamert : MonoBehaviour
     public Text _bHPPlusisLevel;
     public Text _bGoldBonus;
 
-
-
+    private void OnEnable()
+    {
+        _itemSingolton.OnChangeParametrEvent += SetParamentHaracterictic;
+    }
+    private void OnDisable()
+    {
+        _itemSingolton.OnChangeParametrEvent -= SetParamentHaracterictic;
+    }
+    private void Start()
+    {
+        SetParamentHaracterictic();
+    }
     public void SetParamentHaracterictic()
     {
         _bHP.text = _itemSingolton._allHeals.ToString();

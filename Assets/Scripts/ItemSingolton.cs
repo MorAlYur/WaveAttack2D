@@ -8,6 +8,9 @@ using Zenject;
 
 public class ItemSingolton : MonoBehaviour
 {
+    
+    public Action OnChangeParametrEvent;
+
     public HeroesTitle _activHero;
 
     public List<Item> allitems;
@@ -23,17 +26,17 @@ public class ItemSingolton : MonoBehaviour
     public SaveLoadParametrLocal _saveLocal;
     public SaveLoadActivHero _saveLocalActivHero;
 
-    [Header("Параметры начальные")]
-    public float _defDamage;
-    public float _defHeals;
-    public float _defArmor;
-    public float _defMiss;
-    public float _defCritChance;
-    public float _defCritDamage;
-    public float _defAttackSpeed;
-    public float _defShild;
-    public float _defHealPerLevel;
-    public float _defBonusGold;
+    [Header("Все параметры героя")]
+    public float _heroDamage;
+    public float _heroHeals;
+    public float _heroArmor;
+    public float _heroMiss;
+    public float _heroCritChance;
+    public float _heroCritDamage;
+    public float _heroAttackSpeed;
+    public float _heroShild;
+    public float _heroHealPerLevel;
+    public float _heroBonusGold;
 
 
     [Header("Все параметры инвентаря")]
@@ -81,6 +84,13 @@ public class ItemSingolton : MonoBehaviour
         LoadGame();
         SortItemIsKacestvo();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log(_heroMiss);
+        }
+    }
 
     public void SortItemIsKacestvo()
     {
@@ -108,7 +118,7 @@ public class ItemSingolton : MonoBehaviour
             }
         }
     }
-    public void SetParametrInventary(float damage,float heals,float armor,float miss,float critChance,float critDamage,float attackSpeed,float movementSpeed)
+    public void SetParametrInventary(float damage,float heals,float armor,float miss,float critChance,float critDamage,float attackSpeed,float shild)
     {
         _iDamage = damage;
         _iHeals = heals;
@@ -117,11 +127,27 @@ public class ItemSingolton : MonoBehaviour
         _iCritChance = critChance;
         _iCritDamage = critDamage;
         _iAttackSpeed = attackSpeed;
-        _iShild = movementSpeed;
+        _iShild = shild;
+        SetAllParametr();
+    }
+     public void SetParametrHeroes(float damage, float heals, float armor, float miss, float critChanse, float critDamage, float attackSpeed, float shild, float healPerLevel, float bonusGold)
+    {
+        Debug.Log(miss);
+        _heroDamage = damage;
+        _heroHeals = heals;
+        _heroArmor = armor;
+        _heroMiss = miss;
+        _heroCritChance = critChanse;
+        _heroCritDamage = critDamage;
+        _heroAttackSpeed = attackSpeed;
+        _heroShild = shild;
+        _heroHealPerLevel = healPerLevel;
+        _heroBonusGold = bonusGold;
+        Debug.Log(_heroMiss);
         SetAllParametr();
     }
 
-    public void SetParametrUpgrade(float damage,float heals,float armor,float miss,float critChanse,float critDamage,float attackSpeed,float movementSpeed,float healPerLevel,float bonusGold)
+    public void SetParametrUpgrade(float damage,float heals,float armor,float miss,float critChanse,float critDamage,float attackSpeed,float shild,float healPerLevel,float bonusGold)
     {
         _upDamage = damage;
         _upHeals = heals;
@@ -130,23 +156,24 @@ public class ItemSingolton : MonoBehaviour
         _upCritChance = critChanse;
         _upCritDamage = critDamage;
         _upAttackSpeed = attackSpeed;
-        _upShild = movementSpeed;
+        _upShild = shild;
         _upHealPerLevel = healPerLevel;
         _upBonusGold = bonusGold;
         SetAllParametr();
     }
     public void SetAllParametr()
     {
-        _allHeals = _defHeals + _iHeals + _upHeals;
-        _allDamage = _defDamage + _iDamage + _upDamage;
-        _allArmor = _defArmor + _iArmor + _upArmor;
-        _allMiss = _defMiss = _iMiss + _upMiss;
-        _allCritChance = _defCritChance + _iCritChance + _upCritChance;
-        _allCritDamage = _defCritDamage + _iCritDamage + _upCritDamage;
-        _allAttackSpeed = _defAttackSpeed + ((_iAttackSpeed + _upAttackSpeed)/100);
-        _allShild = _defShild + _iShild + _upShild;
-        _allHealPerLevel = _defHealPerLevel + _upHealPerLevel;
-        _allBonusGold = _defBonusGold + _upBonusGold;
+        _allHeals = _heroHeals + _iHeals + _upHeals;
+        _allDamage = _heroDamage + _iDamage + _upDamage;
+        _allArmor = _heroArmor + _iArmor + _upArmor;
+        _allMiss = _heroMiss + _iMiss + _upMiss;
+        _allCritChance = _heroCritChance + _iCritChance + _upCritChance;
+        _allCritDamage = _heroCritDamage + _iCritDamage + _upCritDamage;
+        _allAttackSpeed = _heroAttackSpeed + ((_iAttackSpeed + _upAttackSpeed)/100);
+        _allShild = _heroShild + _iShild + _upShild;
+        _allHealPerLevel = _heroHealPerLevel + _upHealPerLevel;
+        _allBonusGold = _heroBonusGold + _upBonusGold;
+        OnChangeParametrEvent?.Invoke();
         SaveGame();
     }
 
@@ -171,6 +198,17 @@ public class ItemSingolton : MonoBehaviour
         _saveLocal._upShild = _upShild;
         _saveLocal._upHealPerLevel = _upHealPerLevel;
         _saveLocal._upBonusGold = _upBonusGold;
+
+        _saveLocal._heroDamage = _heroDamage;
+        _saveLocal._heroHeals = _heroHeals;
+        _saveLocal._heroArmor = _heroArmor;
+        _saveLocal._heroMiss = _heroMiss;
+        _saveLocal._heroCritChance = _heroCritChance;
+        _saveLocal._heroCritDamage = _heroCritDamage;
+        _saveLocal._heroAttackSpeed = _heroAttackSpeed;
+        _saveLocal._heroShild = _heroShild;
+        _saveLocal._heroHealPerLevel = _heroHealPerLevel;
+        _saveLocal._heroBonusGold = _heroBonusGold;
 
         _saveLocal._allDamage = _allDamage;
         _saveLocal._allHeals = _allHeals;
@@ -211,6 +249,17 @@ public class ItemSingolton : MonoBehaviour
         _upShild = _saveLocal._upShild;
         _upHealPerLevel = _saveLocal._upHealPerLevel;
         _upBonusGold = _saveLocal._upBonusGold;
+
+        _heroDamage = _saveLocal._heroDamage;
+        _heroHeals = _saveLocal._heroHeals;
+        _heroArmor = _saveLocal._heroArmor;
+        _heroMiss = _saveLocal._heroMiss;
+        _heroCritChance = _saveLocal._heroCritChance;
+        _heroCritDamage = _saveLocal._heroCritDamage;
+        _heroAttackSpeed = _saveLocal._heroAttackSpeed;
+        _heroShild = _saveLocal._heroShild;
+        _heroHealPerLevel = _saveLocal._heroHealPerLevel;
+        _heroBonusGold = _saveLocal._heroBonusGold;
 
         _allDamage = _saveLocal._allDamage;
         _allHeals = _saveLocal._allHeals;
@@ -264,6 +313,18 @@ public class SaveLoadParametrLocal
     public float _upShild;
     public float _upHealPerLevel;
     public float _upBonusGold;
+
+    public float _heroDamage;
+    public float _heroHeals;
+    public float _heroArmor;
+    public float _heroMiss;
+    public float _heroCritChance;
+    public float _heroCritDamage;
+    public float _heroAttackSpeed;
+    public float _heroShild;
+    public float _heroHealPerLevel;
+    public float _heroBonusGold;
+
 
     public float _allDamage;
     public float _allHeals;

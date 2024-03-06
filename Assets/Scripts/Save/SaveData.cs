@@ -101,6 +101,17 @@ public class SaveParametrAll
     public float _upHealPerLevel;
     public float _upBonusGold;
 
+    public float _heroDamage;
+    public float _heroHeals;
+    public float _heroArmor;
+    public float _heroMiss;
+    public float _heroCritChance;
+    public float _heroCritDamage;
+    public float _heroAttackSpeed;
+    public float _heroShild;
+    public float _heroHealPerLevel;
+    public float _heroBonusGold;
+
     public float _allDamage;
     public float _allHeals;
     public float _allArmor;

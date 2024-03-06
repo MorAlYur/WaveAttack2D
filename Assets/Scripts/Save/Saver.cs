@@ -182,6 +182,17 @@ public class Saver : MonoBehaviour
         _saveData._saveParametrAll._upHealPerLevel = saveLoadParametrLocal._upHealPerLevel;
         _saveData._saveParametrAll._upBonusGold = saveLoadParametrLocal._upBonusGold;
 
+         _saveData._saveParametrAll._heroDamage = saveLoadParametrLocal._heroDamage;
+        _saveData._saveParametrAll._heroHeals = saveLoadParametrLocal._heroHeals;
+        _saveData._saveParametrAll._heroArmor = saveLoadParametrLocal._heroArmor;
+        _saveData._saveParametrAll._heroMiss = saveLoadParametrLocal._heroMiss;
+        _saveData._saveParametrAll._heroCritChance = saveLoadParametrLocal._heroCritChance;
+        _saveData._saveParametrAll._heroCritDamage = saveLoadParametrLocal._heroCritDamage;
+        _saveData._saveParametrAll._heroAttackSpeed = saveLoadParametrLocal._heroAttackSpeed;
+        _saveData._saveParametrAll._heroShild = saveLoadParametrLocal._heroShild;
+        _saveData._saveParametrAll._heroHealPerLevel = saveLoadParametrLocal._heroHealPerLevel;
+        _saveData._saveParametrAll._heroBonusGold = saveLoadParametrLocal._heroBonusGold;
+
         _saveData._saveParametrAll._allDamage = saveLoadParametrLocal._allDamage;
         _saveData._saveParametrAll._allHeals = saveLoadParametrLocal._allHeals;
         _saveData._saveParametrAll._allArmor = saveLoadParametrLocal._allArmor;
@@ -217,6 +228,17 @@ public class Saver : MonoBehaviour
         saved._upShild = _saveData._saveParametrAll._upMovementSpeed;
         saved._upHealPerLevel = _saveData._saveParametrAll._upHealPerLevel;
         saved._upBonusGold = _saveData._saveParametrAll._upBonusGold;
+
+        saved._heroDamage = _saveData._saveParametrAll._heroDamage;
+        saved._heroHeals = _saveData._saveParametrAll._heroHeals;
+        saved._heroArmor = _saveData._saveParametrAll._heroArmor;
+        saved._heroMiss = _saveData._saveParametrAll._heroMiss;
+        saved._heroCritChance = _saveData._saveParametrAll._heroCritChance;
+        saved._heroCritDamage = _saveData._saveParametrAll._heroCritDamage;
+        saved._heroAttackSpeed = _saveData._saveParametrAll._heroAttackSpeed;
+        saved._heroShild = _saveData._saveParametrAll._heroShild;
+        saved._heroHealPerLevel = _saveData._saveParametrAll._heroHealPerLevel;
+        saved._heroBonusGold = _saveData._saveParametrAll._heroBonusGold;
 
         saved._allDamage = _saveData._saveParametrAll._allDamage;
         saved._allHeals = _saveData._saveParametrAll._allHeals;

@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Golova
@@ -687,7 +689,8 @@ ScriptedImporter:
     - {x: 34, y: 50}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -567, y: -135}
+    uvTransform: {x: 4, y: 562}
+    spritePosition: {x: 571, y: 697}
   - name: Krilo
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1213,7 +1216,8 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 7, y: 104}
+    uvTransform: {x: 364, y: 562}
+    spritePosition: {x: 357, y: 458}
   - name: Bone
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1842,7 +1846,8 @@ ScriptedImporter:
     - {x: 7, y: 52}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -200, y: -388}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 204, y: 392}
   - name: RigNoga
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2309,7 +2314,8 @@ ScriptedImporter:
     - {x: 0, y: 36}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 249, y: -178}
+    uvTransform: {x: 701, y: 4}
+    spritePosition: {x: 452, y: 182}
   - name: LeftNoga
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2797,7 +2803,8 @@ ScriptedImporter:
     - {x: 0, y: 37}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -589, y: 877}
+    uvTransform: {x: 4, y: 1059}
+    spritePosition: {x: 593, y: 182}
   characterData:
     bones:
     - name: bone_1

@@ -224,7 +224,18 @@ Menu.Heroes.PanelRight.Mastery,Мастерство,Mastery
 Menu.Heroes.PanelRight.Stars,Звёзды,Stars
 Menu.Heroes.PanelRight.LvlMastery,Ур. мастерства:,Lvl. Mastery:
 Menu.Heroes.PanelRight.Reset,Сброс,Reset
-Menu.Heroes.RewardInLevel,За уровень,Per level
+Menu.Heroes.RewardInLevel.PerLevel,За уровень,Per level
+Menu.Heroes.RewardInLevel.Damage,Урон +{0},Damage +{0}
+Menu.Heroes.RewardInLevel.Heals,Жизни +{0},Life +{0}
+Menu.Heroes.RewardInLevel.Armor,Броня +{0},Armor +{0}
+Menu.Heroes.RewardInLevel.Shild,Мощность щита +{0},Shield power +{0}
+Menu.Heroes.RewardInLevel.HealPerLevel,Восп.здор.при пов.ур +{0},Rest. Health hw.get.lvl +{0}
+Menu.Heroes.RewardInLevel.AttackSpeed,Скорость атаки +{0}%,Attack speed +{0}%
+Menu.Heroes.RewardInLevel.Miss,Шанс увернуться +{0}%,Chance to dodge +{0}%
+Menu.Heroes.RewardInLevel.CritChance,Шанс крита +{0}%,Crit chance +{0}%
+Menu.Heroes.RewardInLevel.CritDamage,Урон от крита +{0}%,Crit Damage +{0}%
+Menu.Heroes.RewardInLevel.GoldBonus,Дополнительные монеты +{0}%,Additional coins +{0}%
+Game.Level,Уровень,Level
 Game.NewAbiliyiText,Выберите способность!,Choose an ability!
 Game.Skill.Damage.Name,Увелечение урона,Damage increase
 Game.Skill.Damage.Short,Силач,Strongman
